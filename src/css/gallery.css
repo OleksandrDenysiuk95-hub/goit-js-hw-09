@@ -1,0 +1,54 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  max-width: 1440px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.gallery {
+  max-width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.04);
+}
+
+.centered-button {
+  display: block; /* Делаем кнопку блочным элементом */
+  margin: 20px auto 0; /* 20px сверху, авто слева/справа (центр) */
+  padding: 10px 20px; /* Стилизация: отступы внутри */
+  background-color: #007bff; /* Стилизация: цвет фона */
+  color: white; /* Стилизация: цвет текста */
+  border: none; /* Стилизация: убрать рамку */
+  border-radius: 5px; /* Стилизация: скругление */
+  cursor: pointer; /* Стилизация: курсор */
+}
